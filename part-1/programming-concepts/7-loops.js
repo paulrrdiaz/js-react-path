@@ -1,26 +1,55 @@
-var students = [
+const students = [
   {
-    name: "Jon Snow",
-    background: "Nothing",
+    name: "Yoel Picasso Chavez",
+    background: "FullStack",
+    email: "ypicasso@gmail.com",
   },
   {
-    name: "Robb",
-    background: "kind of king",
+    name: "Juan Kuga",
+    background: "FullStack",
+    email: "juankp3@gmail.com",
   },
   {
-    name: "Sansa",
-    background: "Queen",
+    name: "Luis Fernando",
+    background: "EStudiante",
+    email: "chaoslecion71@gmail.com",
   },
   {
-    name: "Arya",
-    background: "Killer",
+    name: "Ladislao Chapa",
+    background: "Freelance",
+    email: "ladislaox@gmail.com",
   },
   {
-    name: "Rickon",
-    background: "useless",
+    name: "Diego Rendería",
+    background: "FullStack",
+    email: "dgo250594@gmail.com",
+  },
+  {
+    name: "Harold Carhuancho",
+    background: "FullStack",
+    email: "haroldavis91@gmail.com",
+  },
+  {
+    name: "Diego Mitma",
+    background: "",
+    email: "diego89ma@gmail.com",
+  },
+  {
+    name: "Fernando Valverde",
+    background: "Backend",
+    email: "fvalverdeu@gmail.com",
+  },
+  {
+    name: "Joel Miranda",
+    background: "Freelance",
+    email: "joelmiranda1300@gmail.com",
+  },
+  {
+    name: "Ronald Requena",
+    background: "Backend",
+    email: "rcronald@gmail.com",
   },
 ];
-
 for (let s = 0; s < students.length; s++) {
   const student = students[s];
   console.log(student);
