@@ -49,6 +49,11 @@ const students = [
     background: "Backend",
     email: "rcronald@gmail.com",
   },
+  {
+    name: "Juan Mendoza",
+    background: "Networking",
+    email: "jmendozaore@gmail.com",
+  }
 ];
 for (let s = 0; s < students.length; s++) {
   const student = students[s];
