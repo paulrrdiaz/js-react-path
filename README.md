@@ -19,6 +19,17 @@ You can find the syllabus right [here](http://bit.ly/area51_jsdev_reactpath)
 - [Closures](https://scotch.io/tutorials/understanding-javascript-closures-a-practical-approach)
 - [this/Context](https://towardsdatascience.com/javascript-context-this-keyword-9a78a19d5786)
 
+## Deep in class 3
+
+- [Prototypes](https://medium.com/better-programming/prototypes-in-javascript-5bba2990e04b)
+- [Class]()
+- [Javascript Fatigue](https://dev.to/banesag/javascript-fatigue--bhh)
+- [Literal Strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+
+## Deep in class 4
+
+- [Destructuring](https://dev.to/banesag/javascript-fatigue--bhh)
+
 ## Books
 
 - [Eloquent Javascript](https://eloquentjavascript.net/)
@@ -33,16 +44,18 @@ You can find the syllabus right [here](http://bit.ly/area51_jsdev_reactpath)
 - [IIFEs](https://medium.com/@vvkchandra/essential-javascript-mastering-immediately-invoked-function-expressions-67791338ddc6)
 - [Garbage collection](https://medium.com/front-end-weekly/understanding-javascript-memory-management-using-garbage-collection-35ed4954a67f)
 - [Collatz conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture)
+- [Javascript Unary Operators: Simple and Useful](https://scotch.io/tutorials/javascript-unary-operators-simple-and-useful#toc-bitwise-not-)
+- [Javascript Equility Table](https://dorey.github.io/JavaScript-Equality-Table/)
 - [Call, Apply and Bind](https://www.codementor.io/@niladrisekhardutta/how-to-call-apply-and-bind-in-javascript-8i1jca6jp)
+- [Tagged Template](https://codeburst.io/javascript-es6-tagged-template-literals-a45c26e54761)
+- [Object Constructor](https://www.w3schools.com/js/js_object_constructors.asp)
 
 ## Tools
 
-- [RunJS, A JavaScript playground](https://github.com/lukehaas/RunJS)
+- [RunJS, A Javascript playground](https://github.com/lukehaas/RunJS)
 
 ## Helpfull links
 
-- [MDN JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
-- [JavaScript Unary Operators: Simple and Useful](https://scotch.io/tutorials/javascript-unary-operators-simple-and-useful#toc-bitwise-not-)
-- [Equility Table](https://dorey.github.io/JavaScript-Equality-Table/)
+- [MDN Javascript](https://developer.mozilla.org/es/docs/Web/JavaScript)
 - [TC39 Proposals](https://github.com/tc39/proposals)
 - [TC39 Finished Proposals](https://github.com/tc39/proposals/blob/master/finished-proposals.md)
