@@ -24,7 +24,7 @@ You can find the syllabus right [here](http://bit.ly/area51_jsdev_reactpath)
 - [Prototypes](https://medium.com/better-programming/prototypes-in-javascript-5bba2990e04b)
 - [Class]()
 - [Javascript Fatigue](https://dev.to/banesag/javascript-fatigue--bhh)
-- [Literal Strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+- [Literal Strings](https://medium.com/@paulrrdiaz/es6-strings-literals-tags-methods-and-rest-d17f6ab8b6f2)
 
 ## Deep in class 4
 
