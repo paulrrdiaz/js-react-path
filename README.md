@@ -28,7 +28,12 @@ You can find the syllabus right [here](http://bit.ly/area51_jsdev_reactpath)
 
 ## Deep in class 4
 
-- [Destructuring](https://dev.to/banesag/javascript-fatigue--bhh)
+- [Destructuring]()
+- [Array Methods]()
+
+## Deep in class 5
+
+- [Objects]()
 
 ## Books
 
@@ -49,10 +54,12 @@ You can find the syllabus right [here](http://bit.ly/area51_jsdev_reactpath)
 - [Call, Apply and Bind](https://www.codementor.io/@niladrisekhardutta/how-to-call-apply-and-bind-in-javascript-8i1jca6jp)
 - [Tagged Template](https://codeburst.io/javascript-es6-tagged-template-literals-a45c26e54761)
 - [Object Constructor](https://www.w3schools.com/js/js_object_constructors.asp)
+- [Extract, Transform, Load || ETL](https://en.wikipedia.org/wiki/Extract,_transform,_load)
 
 ## Tools
 
 - [RunJS, A Javascript playground](https://github.com/lukehaas/RunJS)
+- [FiraCode - Monospaced font with programming ligatures](https://github.com/tonsky/FiraCode)
 
 ## Helpfull links
 

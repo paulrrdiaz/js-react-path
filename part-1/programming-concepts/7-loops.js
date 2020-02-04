@@ -11,7 +11,7 @@ const students = [
   },
   {
     name: "Luis Fernando",
-    background: "EStudiante",
+    background: "Estudiante",
     email: "chaoslecion71@gmail.com",
   },
   {
@@ -35,7 +35,7 @@ const students = [
     email: "diego89ma@gmail.com",
   },
   {
-    name: "Fernando Valverde",
+    name: "Fernando Valverde |",
     background: "Backend",
     email: "fvalverdeu@gmail.com",
   },

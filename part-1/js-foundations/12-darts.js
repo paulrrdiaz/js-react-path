@@ -1,7 +1,6 @@
 /*
 *
 *
-
 Darts is a game where players throw darts to a target.
 
 In our particular instance of the game, the target rewards with 4 different amounts of points, depending on where the dart lands:

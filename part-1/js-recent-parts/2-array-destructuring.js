@@ -1,25 +1,41 @@
 function data() {
-  return [1, 2, 3, 4, 5, 6];
+  return [4, 5, null];
 }
 
-const arrayFromData = data()
+const response = data();
 
-const [
-  a,
-  b = 420,
-  c
-] = data();
+const prop1 = response[0];
+const prop2 = response[1];
+const prop3 = response[2] || 100;
 
+console.log(prop1);
+console.log(prop2);
+console.log(prop3, "prop3");
+
+const [a, b, c = 50, ...rest] = response;
+
+const temp = Array.from("1, 2, 3");
+
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(rest);
+
+let x;
+let y;
 const obj = {};
 
-[
-  obj.a,
-  obj.b,
-  obj.c
-] = data() || [];
+[x, , y] = response;
+[obj.a, obj.b] = response;
 
-function moreData([a, b, c] = []) {
-  return a + b + c
+console.log(x, "x");
+console.log(y, "y");
+console.log(obj, "obj");
+
+function moreData([first = "Jon", second = "Stark"] = [], count = "Testing") {
+  return [first, second, count];
 }
 
-moreData(arrayFromData)
+const starks = ["Sansa", "Tyrion"];
+
+moreData(starks, 200);
