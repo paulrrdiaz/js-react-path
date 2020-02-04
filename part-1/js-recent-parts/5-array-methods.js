@@ -152,7 +152,11 @@ const arrayWithNestedValues = [
 console.log(arrayWithNestedValues.flat(Infinity))
 
 const arrayFlatMapped = numbers.flatMap(number => [number, number * 2])
-
+console.log(numbers.flatMap(number => {
+  return number > 2 ?
+      [number * 2, number * 3, number * 4] :
+      []
+}))
 console.log(arrayFlatMapped);
 
 // Array.prototype.join()

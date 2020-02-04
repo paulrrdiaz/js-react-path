@@ -22,5 +22,6 @@ const SCORES = Object.keys(PRIMITIVES_SCORES).reduce(
   {},
 );
 
-export const score = word =>
-  Array.from(word.toLowerCase()).reduce((previous, letter) => previous + SCORES[letter], 0);
+const score = (word) =>
+  Array.from(word).reduce((previous, current) => 
+    previous + SCORES[current], 0)

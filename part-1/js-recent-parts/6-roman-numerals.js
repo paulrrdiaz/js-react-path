@@ -6,6 +6,8 @@ Write a function to convert from normal numbers to Roman Numerals.
  1  => I
 10  => X
  7  => VII
+400 => CD
+404 => CDIV
 
 *
 */
@@ -26,7 +28,7 @@ const ROMANS = {
   I: 1,
 };
 
-export const toRoman = (number, roman = "") => {
+const toRoman = (number, roman = "") => {
   for (const ROMAN in ROMANS) {
     while (number >= ROMANS[ROMAN]) {
       roman += ROMAN;
@@ -36,3 +38,12 @@ export const toRoman = (number, roman = "") => {
 
   return roman;
 };
+
+const romanize = (number, roman = "") =>
+  Object.keys(ROMANS).reduce((previous, current) => {
+    while (number >= ROMANS[current]) {
+      roman += current;
+      number -= ROMANS[current];
+    }
+    return previous + roman;
+  }, "");
