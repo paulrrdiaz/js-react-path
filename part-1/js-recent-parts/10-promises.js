@@ -33,32 +33,42 @@ const resolveAfter = (ms, value) => {
   });
 };
 
-const promiseA = resolveAfter(4000, "Jon");
-const promiseB = resolveAfter(2000, "Snow");
+const promiseFoo = resolveAfter(3000, { name: "Jon" });
+const promiseBar = resolveAfter(4000, "bar");
+const promiseBaz = resolveAfter(5000, "baz");
+const promiseFailed = Promise.reject({
+  error: true,
+  msg: "This is an error",
+});
 
-const fastestPromise = Promise.race([promiseA, promiseB]);
-fastestPromise.then(response => console.log(response));
+const promises = [promiseFoo, promiseFailed, promiseBaz, promiseBar];
 
-// promiseA.then((responseA) => {
-//   console.log(responseA);
-//   promiseB.then((responseB) => {
-//     console.log(responseB)
-//   })
-// })
+const fastestPromise = Promise.race(promises);
 
-Promise.all([promiseA, promiseB]).then(response => {
-  const responseA = response[0];
-  const responseB = response[1];
-  console.log(responseA, responseB);
+fastestPromise.then(response => {
+  console.log(response);
+});
+
+const allPromises = Promise.all(promises);
+allPromises.then(response => {
+  console.log(response);
+});
+
+const settlePromises = Promise.allSettled(promises);
+
+settlePromises.then(response => {
+  const rejected = response.filter(r => r.status !== "fulfilled");
+  console.log(rejected);
 });
 
 Promise.any([
   Promise.reject("Error 1!!!"),
   Promise.reject("Error 2!!!"),
-  Promise.resolve("Nice!!!")
+  Promise.resolve("Nice 1!!!"),
+  Promise.resolve("Nice 2!!!"),
 ]).then(
   value => console.log(value),
-  error => console.log(error)
-)
+  error => console.log(error),
+);
 
 const JOKES_API_URL = "https://official-joke-api.appspot.com/random_ten";

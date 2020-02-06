@@ -48,6 +48,28 @@ const movies = {
   },
 };
 
+const moviesOld = {
+  [Symbol.iterator]() {
+    return {
+      next: () => {
+        const finish = randomInt(10) > randomInt(10);
+        
+        return finish ? {
+          value: undefined,
+          done: true,
+        } : {
+          value: createRandomMovie(),
+          done: false
+        }
+      }
+    }
+  }
+}
+
 for (const movie of movies) {
+  console.log(movie);
+}
+
+for (const movie of moviesOld) {
   console.log(movie);
 }
