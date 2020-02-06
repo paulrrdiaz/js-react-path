@@ -33,7 +33,14 @@ You can find the syllabus right [here](http://bit.ly/area51_jsdev_reactpath)
 
 ## Deep in class 5
 
-- [Objects]()
+- [Iterators]()
+- [Generators]()
+
+## Deep in class 6
+
+- [Promises]()
+- [Fetch]()
+- [Async/Await]()
 
 ## Books
 
