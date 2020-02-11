@@ -1,0 +1,22 @@
+{
+  "name": "3-browser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "parcel watch index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.25.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}

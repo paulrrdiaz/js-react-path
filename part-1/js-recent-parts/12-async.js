@@ -58,3 +58,35 @@ const results = async () => {
 };
 
 results();
+
+const API = "";
+
+(async () => {
+  const form = $('#js--form');
+
+  form.submit(function(e) {
+    e.preventDefault();
+    const zipcode = $(this).find('input[type="zipcode"]').value();
+    const ajaxConfig = {
+      method: "POST",
+      url: API,
+      data: JSON.parse({zipcode})
+    }
+    
+    try {
+      const response = await $.ajax(ajaxConfig);
+      console.log(response);
+    } catch (error) {
+      console.log(error);
+    }
+
+
+    $.ajax(ajaxConfig)
+      .done(function () {
+        console.log('response');
+      })
+      .fail(function (error) {
+        console.log(error);
+      });
+  })
+})()
