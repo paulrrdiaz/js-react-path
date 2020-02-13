@@ -42,6 +42,12 @@ You can find the syllabus right [here](http://bit.ly/area51_jsdev_reactpath)
 - [Fetch]()
 - [Async/Await]()
 
+## Deep in class 7
+
+- [Node - Introduction]()
+- [Modules && NPM]()
+- [Browser]()
+
 ## Books
 
 - [Eloquent Javascript](https://eloquentjavascript.net/)

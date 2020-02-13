@@ -1,0 +1,17 @@
+{
+  "Jon Snow": {
+    "firstName": "Jon",
+    "lastName": "Snow",
+    "username": "jon.snow"
+  },
+  "sansastark": {
+    "firstName": "Sansa",
+    "lastName": "Stark",
+    "username": "sansastark"
+  },
+  "bran.stark": {
+    "firstName": "Bran",
+    "lastName": "Stark",
+    "username": "bran.stark"
+  }
+}
