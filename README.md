@@ -2,6 +2,10 @@
 
 You can find the syllabus right [here](http://bit.ly/area51_jsdev_reactpath)
 
+## Who am I?
+
+- []()
+
 ## Deep in class 1
 
 - [Values](https://2ality.com/2011/03/javascript-values-not-everything-is.html)

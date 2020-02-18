@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First commit</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@16.7.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"></script>
+    <script type="text/javascript">
+      const root = document.getElementById("root");
+      // const element = document.createElement("div");
+      // element.innerHTML = "<h1>Welcome to the React path</h1>";
+
+      // root.appendChild(element);
+
+      const Student = ({ name, title = "Stark' child", email = "empty" }) => {
+        return React.createElement(
+          "div",
+          {
+            className: "student",
+          },
+          React.createElement("h3", {}, name),
+          React.createElement("p", {}, title),
+          React.createElement("span", {}, email),
+        );
+      };
+
+      const AppWrapper = () => {
+        return React.createElement("div", {
+          className: "app--wrapper",
+        });
+      };
+
+      const App = () => {
+        return React.createElement(
+          "div",
+          {
+            className: "app--wrapper",
+            id: "#js--app--wrapper",
+            current: 0,
+          },
+          React.createElement("h1", { className: "app--title" }, "Welcome again!"),
+          React.createElement(Student, { name: "Sansa Stark", title: "Queen on the north" }),
+          React.createElement(Student, { name: "Arya Stark", title: "Assasian" }),
+          React.createElement(Student, { name: "Bran Stark" }),
+          React.createElement(Student, { name: "Jon Snow", email: "jon.snow@gmail.com" }),
+        );
+      };
+
+      // console.log(
+      //   React.createElement(
+      //     "div",
+      //     {
+      //       className: "app--wrapper",
+      //       id: "#js--app--wrapper",
+      //       current: 0,
+      //     },
+      //     React.createElement("h1", { className: "app--title" }, "Welcome again!"),
+      //     React.createElement("h6", { className: "app--subtitle" }, "React path"),
+      //   ),
+      // );
+
+      ReactDOM.render(React.createElement(App), root);
+    </script>
+  </body>
+</html>

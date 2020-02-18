@@ -60,12 +60,5 @@ const students = [
     email: "joserivasantequera@gmail.com",
   },
 ];
-for (let s = 0; s < students.length; s++) {
-  const student = students[s];
-  console.log(student);
-}
 
-for (const s in students) {
-  const student = students[s];
-  console.log(student);
-}
+export default students;
