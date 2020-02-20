@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,700&display=swap");
+@import url("https://unpkg.com/reset-css/reset.css");
+
+$color-grey: #222f3e;
+$color-grey-light: #c8d6e5;
+$color-black: #000;
+$color-white: #fff;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  line-height: normal;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+body {
+  background-color: $color-grey;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.app {
+  &--wrapper {
+    width: 90%;
+    min-height: 5vh;
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &--full {
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &--center {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.calculator {
+  background-color: black;
+  margin: 0 auto;
+  width: 280px;
+  padding: 10px 10px 0;
+
+  &__prompt {
+    color: $color-white;
+    height: 120px;
+    position: relative;
+
+    &__result {
+      position: absolute;
+      left: 0;
+      font-size: 48px;
+      font-weight: 500;
+      right: 0;
+      bottom: 10px;
+      height: 50px;
+      text-align: right;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__button {
+    border-radius: 50%;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-weight: 300;
+    font-size: 24px;
+    height: 60px;
+    line-height: normal;
+    margin-bottom: 10px;
+    width: 60px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &--big {
+      text-align: left;
+      border-radius: 40px;
+      width: 120px;
+      padding: 0 24px;
+    }
+  }
+}
