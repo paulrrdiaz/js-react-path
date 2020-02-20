@@ -200,7 +200,7 @@ class MyComponent extends Component {
 - Pendientes del comportamiento
 - Renderizan a los Presentationals
 - Define los event handlers
-- Están definidos como clases
+- Están definidos como clases(?)
 
 ### Presentationals
 
