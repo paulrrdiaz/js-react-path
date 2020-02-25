@@ -1,9 +1,16 @@
 import React from "react";
+import Main from "layouts/Main";
+import { Link } from "@reach/router";
 
 export default () => {
   return (
-    <div className="app--wrapper">
-      <h1>Home</h1>
-    </div>
+    <Main>
+      <h1>Pick one</h1>
+      <ul>
+        <li>
+          <Link to="/calculator">Calculator</Link>
+        </li>
+      </ul>
+    </Main>
   );
 };

@@ -1,8 +1,9 @@
 import React from "react";
-import CalculatorButton from "./CalculatorButton";
 import isNumber from "lodash/isNumber";
 import isString from "lodash/isString";
 import isNull from "lodash/isNull";
+import CalculatorButton from "components/Calculator/CalculatorButton";
+import styles from "components/Calculator/Calculator.module.css";
 
 const BUTTONS = [
   {
@@ -147,11 +148,11 @@ class Calculator extends React.Component {
     const { prompt } = this.state;
 
     return (
-      <div className="calculator">
-        <div className="calculator__prompt">
-          <div className="calculator__prompt__result">{prompt}</div>
+      <div className={styles.calculator}>
+        <div className={styles.prompt}>
+          <div className={styles.result}>{prompt}</div>
         </div>
-        <div className="calculator__buttons">
+        <div className={styles.buttons}>
           {BUTTONS.map((button, index) => (
             <CalculatorButton evaluate={this.evaluate} key={`button-${index + 1}`} {...button} />
           ))}

@@ -1,8 +1,8 @@
-import React from 'react'
-import { Router } from '@reach/router'
+import React from "react";
+import { Router } from "@reach/router";
 
-import Home from '../views/Home';
-import Calculator from '../views/Calculator';
+import Home from "views/Home";
+import Calculator from "views/Calculator";
 
 export default () => {
   return (
@@ -10,5 +10,5 @@ export default () => {
       <Home path="/" />
       <Calculator path="/calculator" />
     </Router>
-  )
-}
+  );
+};

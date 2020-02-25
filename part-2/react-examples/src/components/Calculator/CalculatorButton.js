@@ -1,16 +1,17 @@
 import React from "react";
+import styles from "components/Calculator/CalculatorButton.module.css";
 
 const CalculatorButton = props => {
   const { text, operation, color, big, evaluate } = props;
-  const styles = {
+  const style = {
     backgroundColor: color,
     color: color === "#a5a5a5" ? "black" : "white",
   };
   return (
     <button
       onClick={() => evaluate(operation)}
-      style={styles}
-      className={`calculator__button ${big && "calculator__button--big"}`}
+      style={style}
+      className={`${styles.button} ${big && styles.buttonBig}`}
     >
       {text}
     </button>

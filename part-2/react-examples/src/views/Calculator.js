@@ -1,7 +1,12 @@
-import React from 'react'
+import React from "react";
+import Main from "layouts/Main";
+import Calculator from "components/Calculator";
 
 export default () => {
   return (
-    <div className="app--wrapper">Calcular</div>
-  )
-}
+    <Main>
+      <h1>Calculator</h1>
+      <Calculator />
+    </Main>
+  );
+};

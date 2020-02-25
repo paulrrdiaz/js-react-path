@@ -1,0 +1,29 @@
+.calculator {
+  background-color: black;
+  margin: 0 auto;
+  width: 280px;
+  padding: 10px 10px 0;
+}
+
+.prompt {
+  color: #fff;
+  height: 120px;
+  position: relative;
+}
+
+.result {
+  position: absolute;
+  left: 0;
+  font-size: 48px;
+  font-weight: 500;
+  right: 0;
+  bottom: 10px;
+  height: 50px;
+  text-align: right;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
