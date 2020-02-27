@@ -1,0 +1,44 @@
+.page {
+  min-height: 100vh;
+
+  &--blue {
+    background-color: $color-blue;
+  }
+
+  &--purple {
+    background-color: $color-purple;
+  }
+
+  &--green {
+    background-color: $color-green;
+  }
+
+  &--skyblue {
+    background-color: $color-skyblue;
+  }
+
+  &__list {
+    list-style-type: square;
+    font-size: rem(24px);
+    margin-left: 18px;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &--centered {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.app {
+  &--wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+    z-index: 1;
+  }
+}

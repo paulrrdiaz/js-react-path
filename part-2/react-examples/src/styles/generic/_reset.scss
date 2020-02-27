@@ -1,0 +1,25 @@
+body {
+  @include font-nunito();
+  color: rgba($color-black, 0.75);
+  font-size: rem(16px);
+}
+
+h2 {
+  @include font-trade-winds();
+  font-size: rem(48px);
+  margin-bottom: 20px;
+}
+
+li {
+  & + & {
+    margin-top: 10px;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+  }
+}
