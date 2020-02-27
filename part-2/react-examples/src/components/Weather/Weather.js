@@ -3,6 +3,7 @@ import geocode from "utils/geocode";
 import forecast from "utils/forecast";
 import isNull from "lodash/isNull";
 import debounce from "lodash/debounce";
+import { WeatherInput } from "./Weather.styles";
 
 class Weather extends Component {
   constructor(props) {
@@ -69,11 +70,12 @@ class Weather extends Component {
 
     console.log("render");
     return (
-      <div className="weather">
+      <div>
         <form onSubmit={this.onSubmit}>
           <p>Please, enter a location:</p>
           <div>
-            <input onChange={e => debounced(e.target.value)} type="text" />
+            <WeatherInput big color="blue" onChange={e => debounced(e.target.value)} type="text" />
+            <WeatherInput color="green" onChange={e => debounced(e.target.value)} type="text" />
           </div>
           <div>
             <button type="submit">Fetch data</button>

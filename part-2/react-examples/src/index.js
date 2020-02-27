@@ -1,10 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "styles/app.scss";
 // import * as serviceWorker from './serviceWorker';
-import Router from "router";
-
-const App = () => <Router />;
+import App from "components/App";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
