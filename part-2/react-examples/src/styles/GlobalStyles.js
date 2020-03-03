@@ -45,7 +45,7 @@ const Globals = css`
   }
 
   body {
-    background-color: rgb(var(--white));
+    background-color: rgb(var(--snow));
     color: rgb(var(--grey));
     cursor: default;
     font-family: var(--fontNormal);
