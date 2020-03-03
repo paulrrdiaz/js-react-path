@@ -13,6 +13,9 @@ export default () => {
         <li>
           <Link to="/weather">Weather</Link>
         </li>
+        <li>
+          <Link to="/hoc">HOC</Link>
+        </li>
       </ul>
     </Main>
   );
